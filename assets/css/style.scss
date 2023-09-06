@@ -1,0 +1,18 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+
+.anim_p {
+    font-size: 1.1em;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0.8em;
+    padding: 0.5em;
+}
+
+.anim_p .letter {
+    display: inline-block;
+    line-height: 1em;
+}

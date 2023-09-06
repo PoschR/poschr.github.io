@@ -1,4 +1,8 @@
 _site
 .sass-cache
 .jekyll-metadata
+.obsidian
 Gemfile.lock
+*.ruby-version
+*.DS_Store
+*.xcworkspace
