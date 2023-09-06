@@ -21,22 +21,13 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
-      - name: Set up Ruby 💎
-        uses: ruby/setup-ruby@v1
+      - uses: actions/cache@v1
         with:
-          ruby-version: "3"
-          bundler-cache: true
+          path: vendor/bundle
+          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile') }}
+          restore-keys: |
+             ${{ runner.os }}-gems-
 
-      # use jekyll-action-ts to build
-      # https://github.com/limjh16/jekyll-action-ts
-      - name: Build
-        uses: limjh16/jekyll-action-ts@v2
-        with:
-          enable_cache: true
-
-      - name: Deploy to GH Pages 🚀
-        if: ${{ github.event_name != 'pull_request' }}
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: _site
+      - uses: helaili/jekyll-action@2.0.5    # Choose any one of the Jekyll Actions
+        with:                                # Some relative inputs of your action
+          token: ${{ secrets.GITHUB_TOKEN }}
