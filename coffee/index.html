@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="/assets/css/style.css?v=1a40518d70ed0f1fba5b43f36a7c609fadf0c1f3" media="screen">
+    <link rel="stylesheet" href="/assets/css/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="/assets/css/non-screen.css" media="handheld, only screen and (max-device-width:640px)">
+
+    <script src="/assets/js/modernizr.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="/assets/js/headsmart.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Thoughts with Caffeine | Spooky Coffee</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Thoughts with Caffeine" />
+<meta name="author" content="Robert Posch" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Experimental Blog with projects and coffee." />
+<meta property="og:description" content="Experimental Blog with projects and coffee." />
+<meta property="og:site_name" content="Spooky Coffee" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Thoughts with Caffeine" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Robert Posch"},"description":"Experimental Blog with projects and coffee.","headline":"Thoughts with Caffeine","url":"/coffee/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/PoschR/poschr.github.io">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>Spooky Coffee</h1>
+            <h2>Experimental Blog with projects and coffee.</h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      
+      <section id="downloads">
+        <span class="inner">
+            <a href="/index.html" class="zip">Home</a><a href="about/" class="tgz">About</a>
+        </span>
+      </section>
+      
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+          <h1>Thoughts with Caffeine</h1>
+        <p>Here is your coffee. Brewed from the most refined characters, served
+in a special CSS class for the delicous and unique flavor.</p>
+
+<p>Take your time, relax, and enjoy!</p>
+
+<p class="anim_p">Lately I am watching more and more whodunits. Mainly to get inspired for various
+Pen and Paper campaigns I am running. It is fun.</p>
+
+<p class="anim_p">But often I feel cheated. Sometimes a major clue is only revealed once the protagonist
+begins with the explanation. Sometimes even the solution hinges on the suspect
+revealing it.</p>
+
+<p class="anim_p">It often feels like guess work on the protagonist’s part. A myriad of circumstances however
+could prove the protagonist’s hypothesis wrong. And when that thought arises, I feel betrayed.</p>
+
+<p class="anim_p">You know, I get it. As a writer you want tension. As a writer you want the mystery to be a
+mystery as long as possible. But usually the plot is paced so fast that withholding clues
+is not necessary.</p>
+
+<p class="anim_p">Let me figure it out. Solving the mystery can be its own satisfaction. If you design
+the mystery well enough, I will be entertained either way.</p>
+
+<p class="anim_p">Often I pause before the revelation and note all the clues down and try to figure it out
+myself. Usually I get a good rough picture of what happened. Sometimes I figure it out. But
+sometimes I would just miss an essential detail. A detail that was definitely present.</p>
+
+<p class="anim_p">And once our hero detective shows it in their exposure, I go like: Oooooh, that’s what I have missed.
+Everything was there, no clue was introduced once the explanation already begins. And I gain a respect 
+without feeling cheated.</p>
+
+<p class="anim_p">(Coffee brewed on 6th Sep. 2023.)</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>          {
+       }   }   {
+      {   {  }  }
+       }   }{  {
+      {  }{  }  }
+     ( }{ }{  { )
+    .-{   }   }-.
+   ( ( } { } { } )
+   |`-.._____..-'|
+   |             ;--.
+   |            (__  \
+   |             | )  )
+   |             |/  /
+   |             /  / 
+   |            (  /
+   \             y'
+    `-.._____..-'
+
+</code></pre></div></div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+        <script>
+            //wrap letters in a span
+           var textWrappers = document.querySelectorAll('.anim_p');
+           var paragraph_list = [];
+           var index = 0;
+
+           // handle tags in some capacity
+           [].forEach.call(textWrappers, function(textWrapper) {
+               // do whatever
+               var found_elems = [...textWrapper.textContent.matchAll(/\S+/g)]
+               var length = found_elems.length
+               var appending_array = Array(length).fill(index)
+               paragraph_list = paragraph_list.concat(appending_array)
+               index = index + 1;
+
+               textWrapper.innerHTML = textWrapper.textContent.replace(/\S+/g, "<span class='letter'>$&</span>");
+           });
+
+           // TODO: Get all the paragraphs and start each paragraph or sentence at the same time.
+           // See if just appearing makes more sense :)
+
+           // Try this later
+           var imgElement = document.querySelector('code');
+           var imgRect = imgElement.getBoundingClientRect()
+           var topImage = imgRect.top;
+           var imgLeft = imgRect.left;
+           var imgRight = imgRect.right;
+           var imgCenter = (imgRect.left+imgRect.right)/2;
+           var relyRandom = 0.3;
+           var paragraph_delay = 10000;
+           
+           anime.timeline({loop:false})
+             .add({
+               targets: '.anim_p',
+               translateY: function(el, i) {
+                   var topElement = el.getBoundingClientRect().top;
+                   var diff = topImage - topElement;
+                   return [diff+10, 0];
+               },
+               translateX: function(el, i) {
+                   var rect = el.getBoundingClientRect()
+                   var diff = imgCenter - (rect.left+rect.right)/2;
+                   return [diff, 0];
+               },
+               scale: [0,1],
+               translateZ: 0,
+               opacity: [0,1],
+               easing: "easeOutExpo",
+               duration: 20000,
+               delay: (el, i) => Math.floor(200 * (1 - relyRandom + relyRandom* Math.random())) + (i * paragraph_delay)
+             });
+
+           var wordRelyRandom = 0.9;
+           anime.timeline({loop:false})
+             .add({
+               targets: '.anim_p .letter',
+               translateY: function(el, i) {
+                   var topElement = el.getBoundingClientRect().top;
+                   var diff = topImage - topElement;
+                   return [diff+10, 0];
+               },
+               translateX: function(el, i) {
+                   var rect = el.getBoundingClientRect()
+                   var diff = imgCenter - (rect.left+rect.right)/2;
+                   return [diff, 0];
+               },
+               scale: [0,1],
+               translateZ: 0,
+               opacity: [0,1],
+               easing: "easeOutExpo",
+               duration: 20000,
+               delay: (el, i) => Math.floor(800 * (1 - wordRelyRandom + wordRelyRandom* Math.random())) + (paragraph_list[i] * paragraph_delay)
+             });
+        </script>
+        
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            
+              <p>this project by <a href="https://github.com/PoschR">PoschR</a> can be found on <a href="https://github.com/PoschR/poschr.github.io">GitHub</a></p>
+            
+            
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+  </body>
+</html>
